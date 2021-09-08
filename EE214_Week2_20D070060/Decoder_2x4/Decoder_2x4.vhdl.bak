@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity Decoder_2x4  is
+  port (A0,A1,E: in std_logic; Y0,Y1,Y2,Y3: out std_logic);
+end entity Decoder_2x4;
+
+architecture Struct of Decoder_2x4 is
+   component AND_3 is
+	 port (A, B, C: in std_logic; Y: out std_logic);
+	end component;
+	
+	component INVERTER is
+    port (A: in std_logic; Y: out std_logic);
+   end component;
+	
+  signal tI0, tI1, tA0, tA1: std_logic;  
+begin
+  not2:INVERTER port map(A => S, Y => notS);
+  a0: AND_2 port map (A => I0, B => notS, Y => tI0);
+  a1: AND_2 port map (A => I1, B => S, Y => tI1);
+  o2: OR_2  port map (A => tI0, B => tI1, Y =>Y);
+  
+  ag0: AND_3 port map (A => , B => ,c => E, Y => Y0);
+  
+end Struct;

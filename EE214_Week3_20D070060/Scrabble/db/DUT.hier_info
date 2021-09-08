@@ -1,0 +1,34 @@
+|DUT
+input_vector[0] => Scrabble:add_instance.X3
+input_vector[1] => Scrabble:add_instance.X2
+input_vector[2] => Scrabble:add_instance.X1
+input_vector[3] => Scrabble:add_instance.X0
+output_vector[0] <= Scrabble:add_instance.Y
+
+
+|DUT|Scrabble:add_instance
+X0 => XNOR_2:xnor1.A
+X1 => XNOR_2:xnor1.B
+X2 => XOR_2:xor1.A
+X3 => XOR_2:xor1.B
+Y <= AND_2:and1.Y
+
+
+|DUT|Scrabble:add_instance|XNOR_2:xnor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Scrabble:add_instance|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Scrabble:add_instance|AND_2:and1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

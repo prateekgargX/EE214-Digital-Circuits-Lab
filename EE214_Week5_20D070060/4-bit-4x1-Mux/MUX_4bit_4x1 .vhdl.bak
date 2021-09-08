@@ -1,0 +1,19 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity MUX_4bit_4x1  is
+  port (a,b,c,d : in std_logic_vector(3 downto 0);
+  Y : out std_logic_vector(3 downto 0));
+end entity MUX_4bit_4x1;  
+
+architecture Struct of MUX_4bit_4x1 is
+  component  MUX_4x1  is
+  port (I0,I1,I2,I3, S0,S1: in std_logic; Y: out std_logic);
+  end component;
+	
+  signal tI0, tI1: std_logic;  
+begin
+  
+  
+end Struct;
