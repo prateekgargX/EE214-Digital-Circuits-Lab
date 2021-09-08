@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity Right_Shift_4 is
+  port (I : in std_logic_vector(7 downto 0); E : in std_logic; Y: out std_logic_vector(7 downto 0);
+end entity Right_Shift_4;
+
+architecture Struct of Right_Shift_4 is
+  component  MUX_2x1  is
+  port (I: in std_logic_vector(1 downto 0); S: in std_logic; Y: out std_logic);
+  end component;
+	
+begin
+  R_Shift_4: for i in 0 to 7 generate
+    
+	 lsb: if i < 4 generate
+            mx: mux port map(I(0) => I(i), I(1) => I(i+4), S => E, Y => Y(i));
+        end generate lsb;
+
+        msb: if i > 3 generate
+            mx: mux port map(I(0) => I(i), I(1) => '0', S => E, Y => Y(i));
+        end generate msb;
+  
+  end generate ; --Bit_Reversal
+	 	 
+end Struct;
