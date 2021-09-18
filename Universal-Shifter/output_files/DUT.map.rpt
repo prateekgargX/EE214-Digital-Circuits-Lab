@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DUT
-Wed Sep 08 17:07:46 2021
+Sat Sep 18 02:41:33 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Wed Sep 08 17:07:46 2021       ;
+; Analysis & Synthesis Status ; Successful - Sat Sep 18 02:41:33 2021       ;
 ; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name               ; DUT                                         ;
 ; Top-level Entity Name       ; TopLevel                                    ;
@@ -153,35 +153,35 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                 ;
-+--------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                 ; Library     ;
-+--------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; TopLevel.vhdl                                                      ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl                                                      ;             ;
-; v_jtag/synthesis/v_jtag.vhd                                        ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd                                        ; v_jtag      ;
-; MUX_2x1.vhdl                                                       ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl                                                       ;             ;
-; gates.vhdl                                                         ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl                                                         ;             ;
-; DUT.vhdl                                                           ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/DUT.vhdl                                                           ;             ;
-; Bit_Reversal.vhdl                                                  ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Bit_Reversal.vhdl                                                  ;             ;
-; Right_Shift_4.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_4.vhdl                                                 ;             ;
-; Right_Shift_2.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_2.vhdl                                                 ;             ;
-; Right_Shift_1.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_1.vhdl                                                 ;             ;
-; Universal_Shifter.vhdl                                             ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl                                             ;             ;
-; sld_virtual_jtag.v                                                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v                                                                    ;             ;
-; sld_virtual_jtag_basic.v                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                                                              ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                         ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                     ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                           ; altera_sld  ;
-; db/ip/sld2bc8802b/alt_sld_fab.v                                    ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File  ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                      ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                        ;             ;
-+--------------------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                     ;
++--------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                                                     ; Library     ;
++--------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; TopLevel.vhdl                                                      ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl                                                      ;             ;
+; v_jtag/synthesis/v_jtag.vhd                                        ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd                                        ; v_jtag      ;
+; MUX_2x1.vhdl                                                       ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl                                                       ;             ;
+; gates.vhdl                                                         ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl                                                         ;             ;
+; DUT.vhdl                                                           ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/DUT.vhdl                                                           ;             ;
+; Bit_Reversal.vhdl                                                  ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Bit_Reversal.vhdl                                                  ;             ;
+; Right_Shift_4.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_4.vhdl                                                 ;             ;
+; Right_Shift_2.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_2.vhdl                                                 ;             ;
+; Right_Shift_1.vhdl                                                 ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_1.vhdl                                                 ;             ;
+; Universal_Shifter.vhdl                                             ; yes             ; User VHDL File                     ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl                                             ;             ;
+; sld_virtual_jtag.v                                                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag.v                                                                        ;             ;
+; sld_virtual_jtag_basic.v                                           ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                                                                  ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                             ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                         ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                               ; altera_sld  ;
+; db/ip/sld2bc8802b/alt_sld_fab.v                                    ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File  ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Altera IP File           ; D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                          ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction             ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                            ;             ;
++--------------------------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------+
@@ -454,82 +454,82 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Sep 08 17:07:05 2021
+    Info: Processing started: Sat Sep 18 02:40:51 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Universal-Shifter -c DUT
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file toplevel.vhdl
-    Info (12022): Found design unit 1: TopLevel-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 13
-    Info (12023): Found entity 1: TopLevel File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 5
+    Info (12022): Found design unit 1: TopLevel-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 13
+    Info (12023): Found entity 1: TopLevel File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file v_jtag/synthesis/v_jtag.vhd
-    Info (12022): Found design unit 1: v_jtag-rtl File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 44
-    Info (12023): Found entity 1: v_jtag File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 9
+    Info (12022): Found design unit 1: v_jtag-rtl File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 44
+    Info (12023): Found entity 1: v_jtag File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhdl
-    Info (12022): Found design unit 1: Testbench-Behave File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/testbench.vhdl Line: 9
-    Info (12023): Found entity 1: Testbench File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/testbench.vhdl Line: 7
+    Info (12022): Found design unit 1: Testbench-Behave File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/testbench.vhdl Line: 9
+    Info (12023): Found entity 1: Testbench File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/testbench.vhdl Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file mux_2x1.vhdl
-    Info (12022): Found design unit 1: MUX_2x1-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl Line: 9
-    Info (12023): Found entity 1: MUX_2x1 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl Line: 5
+    Info (12022): Found design unit 1: MUX_2x1-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl Line: 9
+    Info (12023): Found entity 1: MUX_2x1 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl Line: 5
 Info (12021): Found 17 design units, including 8 entities, in source file gates.vhdl
-    Info (12022): Found design unit 1: Gates File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 3
-    Info (12022): Found design unit 2: INVERTER-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 45
-    Info (12022): Found design unit 3: AND_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 57
-    Info (12022): Found design unit 4: NAND_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 68
-    Info (12022): Found design unit 5: OR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 79
-    Info (12022): Found design unit 6: NOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 90
-    Info (12022): Found design unit 7: XOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 102
-    Info (12022): Found design unit 8: XNOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 113
-    Info (12022): Found design unit 9: HALF_ADDER-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 124
-    Info (12023): Found entity 1: INVERTER File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 41
-    Info (12023): Found entity 2: AND_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 53
-    Info (12023): Found entity 3: NAND_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 64
-    Info (12023): Found entity 4: OR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 75
-    Info (12023): Found entity 5: NOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 86
-    Info (12023): Found entity 6: XOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 98
-    Info (12023): Found entity 7: XNOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 109
-    Info (12023): Found entity 8: HALF_ADDER File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/gates.vhdl Line: 120
+    Info (12022): Found design unit 1: Gates File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 45
+    Info (12022): Found design unit 3: AND_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 57
+    Info (12022): Found design unit 4: NAND_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 68
+    Info (12022): Found design unit 5: OR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 79
+    Info (12022): Found design unit 6: NOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 90
+    Info (12022): Found design unit 7: XOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 102
+    Info (12022): Found design unit 8: XNOR_2-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 113
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 124
+    Info (12023): Found entity 1: INVERTER File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 41
+    Info (12023): Found entity 2: AND_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 53
+    Info (12023): Found entity 3: NAND_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 64
+    Info (12023): Found entity 4: OR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 75
+    Info (12023): Found entity 5: NOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 86
+    Info (12023): Found entity 6: XOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 98
+    Info (12023): Found entity 7: XNOR_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 109
+    Info (12023): Found entity 8: HALF_ADDER File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/gates.vhdl Line: 120
 Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
-    Info (12022): Found design unit 1: DUT-DutWrap File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/DUT.vhdl Line: 8
-    Info (12023): Found entity 1: DUT File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/DUT.vhdl Line: 3
+    Info (12022): Found design unit 1: DUT-DutWrap File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/DUT.vhdl Line: 8
+    Info (12023): Found entity 1: DUT File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/DUT.vhdl Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file bit_reversal.vhdl
-    Info (12022): Found design unit 1: Bit_Reversal-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Bit_Reversal.vhdl Line: 9
-    Info (12023): Found entity 1: Bit_Reversal File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Bit_Reversal.vhdl Line: 5
+    Info (12022): Found design unit 1: Bit_Reversal-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Bit_Reversal.vhdl Line: 9
+    Info (12023): Found entity 1: Bit_Reversal File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Bit_Reversal.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file right_shift_4.vhdl
-    Info (12022): Found design unit 1: Right_Shift_4-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_4.vhdl Line: 9
-    Info (12023): Found entity 1: Right_Shift_4 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_4.vhdl Line: 5
+    Info (12022): Found design unit 1: Right_Shift_4-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_4.vhdl Line: 9
+    Info (12023): Found entity 1: Right_Shift_4 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_4.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file right_shift_2.vhdl
-    Info (12022): Found design unit 1: Right_Shift_2-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_2.vhdl Line: 9
-    Info (12023): Found entity 1: Right_Shift_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_2.vhdl Line: 5
+    Info (12022): Found design unit 1: Right_Shift_2-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_2.vhdl Line: 9
+    Info (12023): Found entity 1: Right_Shift_2 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_2.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file right_shift_1.vhdl
-    Info (12022): Found design unit 1: Right_Shift_1-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_1.vhdl Line: 9
-    Info (12023): Found entity 1: Right_Shift_1 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Right_Shift_1.vhdl Line: 5
+    Info (12022): Found design unit 1: Right_Shift_1-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_1.vhdl Line: 9
+    Info (12023): Found entity 1: Right_Shift_1 File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Right_Shift_1.vhdl Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file universal_shifter.vhdl
-    Info (12022): Found design unit 1: Universal_Shifter-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 15
-    Info (12023): Found entity 1: Universal_Shifter File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 5
+    Info (12022): Found design unit 1: Universal_Shifter-Struct File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 15
+    Info (12023): Found entity 1: Universal_Shifter File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 5
 Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "e1dr" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 71
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "e2dr" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 71
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "tms" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 71
-Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "jsir" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 71
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(80): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 80
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 89
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 89
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 89
-Warning (10037): Verilog HDL or VHDL warning at TopLevel.vhdl(90): conditional expression evaluates to a constant File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 90
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 97
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 97
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 97
-Warning (10037): Verilog HDL or VHDL warning at TopLevel.vhdl(98): conditional expression evaluates to a constant File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 98
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 105
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 105
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 105
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "cdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 109
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 109
-Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 109
-Info (12128): Elaborating entity "v_jtag" for hierarchy "v_jtag:u0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 116
-Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
-Info (12130): Elaborated megafunction instantiation "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
-Info (12133): Instantiated megafunction "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" with the following parameter: File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "e1dr" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 71
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "e2dr" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 71
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "tms" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 71
+Warning (10036): Verilog HDL or VHDL warning at TopLevel.vhdl(71): object "jsir" assigned a value but never read File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 71
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(80): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 80
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 89
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 89
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(89): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 89
+Warning (10037): Verilog HDL or VHDL warning at TopLevel.vhdl(90): conditional expression evaluates to a constant File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 90
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 97
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 97
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(97): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 97
+Warning (10037): Verilog HDL or VHDL warning at TopLevel.vhdl(98): conditional expression evaluates to a constant File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 98
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "udr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 105
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 105
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(105): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 105
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "cdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 109
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "sdr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 109
+Warning (10492): VHDL Process Statement warning at TopLevel.vhdl(109): signal "io" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 109
+Info (12128): Elaborating entity "v_jtag" for hierarchy "v_jtag:u0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 116
+Info (12128): Elaborating entity "sld_virtual_jtag" for hierarchy "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
+Info (12130): Elaborated megafunction instantiation "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
+Info (12133): Instantiated megafunction "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" with the following parameter: File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/v_jtag/synthesis/v_jtag.vhd Line: 87
     Info (12134): Parameter "sld_auto_instance_index" = "YES"
     Info (12134): Parameter "sld_instance_index" = "0"
     Info (12134): Parameter "sld_ir_width" = "1"
@@ -539,18 +539,18 @@ Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "v_jtag:u
 Info (12131): Elaborated megafunction instantiation "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst", which is child of megafunction instantiation "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 152
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v Line: 415
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "v_jtag:u0|sld_virtual_jtag:virtual_jtag_0|sld_virtual_jtag_basic:sld_virtual_jtag_basic_inst|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
-Info (12128): Elaborating entity "DUT" for hierarchy "DUT:dut_instance" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/TopLevel.vhdl Line: 153
-Info (12128): Elaborating entity "Universal_Shifter" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/DUT.vhdl Line: 23
-Info (12128): Elaborating entity "Bit_Reversal" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 35
-Info (12128): Elaborating entity "MUX_2x1" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Bit_Reversal.vhdl Line: 17
-Info (12128): Elaborating entity "INVERTER" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|INVERTER:not2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl Line: 24
-Info (12128): Elaborating entity "AND_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|AND_2:a0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl Line: 25
-Info (12128): Elaborating entity "OR_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|OR_2:o2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/MUX_2x1.vhdl Line: 27
-Info (12128): Elaborating entity "Right_Shift_4" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_4:R4" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 36
-Info (12128): Elaborating entity "Right_Shift_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_2:R2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 37
-Info (12128): Elaborating entity "Right_Shift_1" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_1:R1" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/Universal_Shifter.vhdl Line: 38
+Info (12128): Elaborating entity "DUT" for hierarchy "DUT:dut_instance" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/TopLevel.vhdl Line: 153
+Info (12128): Elaborating entity "Universal_Shifter" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/DUT.vhdl Line: 23
+Info (12128): Elaborating entity "Bit_Reversal" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 35
+Info (12128): Elaborating entity "MUX_2x1" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Bit_Reversal.vhdl Line: 17
+Info (12128): Elaborating entity "INVERTER" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|INVERTER:not2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl Line: 24
+Info (12128): Elaborating entity "AND_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|AND_2:a0" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl Line: 25
+Info (12128): Elaborating entity "OR_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Bit_Reversal:rev0|MUX_2x1:\bit_Rev:0:mx|OR_2:o2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/MUX_2x1.vhdl Line: 27
+Info (12128): Elaborating entity "Right_Shift_4" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_4:R4" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 36
+Info (12128): Elaborating entity "Right_Shift_2" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_2:R2" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 37
+Info (12128): Elaborating entity "Right_Shift_1" for hierarchy "DUT:dut_instance|Universal_Shifter:add_instance|Right_Shift_1:R1" File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/Universal_Shifter.vhdl Line: 38
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2021.09.08.17:07:29 Progress: Loading sld2bc8802b/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.09.18.02:41:15 Progress: Loading sld2bc8802b/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -561,27 +561,27 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2bc8802b/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (18000): Registers with preset signals will power-up high File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd Line: 386
 Info (21057): Implemented 169 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 6 output pins
     Info (21061): Implemented 159 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Wed Sep 08 17:07:46 2021
-    Info: Elapsed time: 00:00:41
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Sat Sep 18 02:41:34 2021
+    Info: Elapsed time: 00:00:43
     Info: Total CPU time (on all processors): 00:01:14
 
 

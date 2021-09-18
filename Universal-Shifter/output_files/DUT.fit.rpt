@@ -1,5 +1,5 @@
 Fitter report for DUT
-Wed Sep 08 17:07:49 2021
+Sat Sep 18 02:41:38 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Wed Sep 08 17:07:49 2021       ;
+; Fitter Status         ; Successful - Sat Sep 18 02:41:38 2021       ;
 ; Quartus Prime Version ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name         ; DUT                                         ;
 ; Top-level Entity Name ; TopLevel                                    ;
@@ -138,7 +138,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/output_files/DUT.pin.
+The pin-out file can be found in D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/output_files/DUT.pin.
 
 
 +--------------------------------------------------------------------+
@@ -658,7 +658,7 @@ Info (332111): Found 1 clocks
     Info (332111): ======== ============
     Info (332111):  100.000 altera_reserved_tck
 Info (186079): Completed User Assigned Global Signals Promotion Operation
-Info (186215): Automatically promoted signal "sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|splitter_nodes_receive_0[0]" to use Global clock File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v Line: 18
+Info (186215): Automatically promoted signal "sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|splitter_nodes_receive_0[0]" to use Global clock File: D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/db/ip/sld2bc8802b/submodules/alt_sld_fab_alt_sld_fab.v Line: 18
 Info (186216): Automatically promoted some destinations of signal "sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[0]" to use Global clock File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd Line: 1584
     Info (186217): Destination "sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[0]" may be non-global or may not use global clock File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd Line: 1584
     Info (186217): Destination "sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm|state[1]" may be non-global or may not use global clock File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd Line: 1584
@@ -677,7 +677,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  30 pins available
         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  29 pins available
         Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  30 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -691,20 +691,20 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/output_files/DUT.fit.smsg
+Info (144001): Generated suppressed messages file D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/output_files/DUT.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5076 megabytes
-    Info: Processing ended: Wed Sep 08 17:07:49 2021
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 5075 megabytes
+    Info: Processing ended: Sat Sep 18 02:41:38 2021
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-3/Universal-Shifter/output_files/DUT.fit.smsg.
+The suppressed messages can be found in D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Moodle Submissions/Universal-Shifter/output_files/DUT.fit.smsg.
 
 
