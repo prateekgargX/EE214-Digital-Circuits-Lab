@@ -1,0 +1,113 @@
+# Reading pref.tcl
+# do DUT_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/gates.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:01 on Sep 29,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# End time: 17:19:02 on Sep 29,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:02 on Sep 29,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 17:19:02 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/Flipflops.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:02 on Sep 29,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/Flipflops.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Flipflops
+# -- Compiling entity dff_set
+# -- Compiling architecture struct of dff_set
+# -- Compiling entity dff_reset
+# -- Compiling architecture struct of dff_reset
+# End time: 17:19:02 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/Sequence_generator_struct.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:02 on Sep 29,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/Sequence_generator_struct.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Loading package Flipflops
+# -- Compiling entity Sequence_generator_struct
+# -- Compiling architecture structa of Sequence_generator_struct
+# End time: 17:19:02 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:19:02 on Sep 29,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/EXP-5/Sequence-Generator-Structural/testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 17:19:03 on Sep 29,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 17:19:03 on Sep 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading work.gates
+# Loading work.flipflops
+# Loading work.sequence_generator_struct(structa)
+# Loading work.dff_reset(struct)
+# Loading work.dff_set(struct)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: SUCCESS, all tests passed.
+#    Time: 1900 ns  Iteration: 0  Instance: /testbench
+# End time: 17:19:21 on Sep 29,2021, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
