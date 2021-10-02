@@ -1,0 +1,61 @@
+|DUT
+input_vector[0] => Sequence_Generator_Structural:add_instance.clk
+input_vector[1] => Sequence_Generator_Structural:add_instance.reset
+output_vector[0] << Sequence_Generator_Structural:add_instance.Y[0]
+output_vector[1] << Sequence_Generator_Structural:add_instance.Y[1]
+output_vector[2] << Sequence_Generator_Structural:add_instance.Y[2]
+output_vector[3] << Sequence_Generator_Structural:add_instance.Y[3]
+
+
+|DUT|Sequence_Generator_Structural:add_instance
+reset => mod2n_counter:counter.reset
+clk => mod2n_counter:counter.clk
+Y[0] <= logic_unit:lu.Y[0]
+Y[1] <= logic_unit:lu.Y[1]
+Y[2] <= logic_unit:lu.Y[2]
+Y[3] <= logic_unit:lu.Y[3]
+
+
+|DUT|Sequence_Generator_Structural:add_instance|mod2n_counter:counter
+reset => dff_reset:ng:0:dfff.reset
+reset => dff_reset:ng:1:dfff.reset
+reset => dff_reset:ng:2:dfff.reset
+clk => dff_reset:ng:0:dfff.clk
+clk => dff_reset:ng:1:dfff.clk
+clk => dff_reset:ng:2:dfff.clk
+Y[0] <= dff_reset:ng:0:dfff.Q
+Y[1] <= dff_reset:ng:1:dfff.Q
+Y[2] <= dff_reset:ng:2:dfff.Q
+
+
+|DUT|Sequence_Generator_Structural:add_instance|mod2n_counter:counter|dff_reset:\ng:0:dfff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sequence_Generator_Structural:add_instance|mod2n_counter:counter|dff_reset:\ng:1:dfff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sequence_Generator_Structural:add_instance|mod2n_counter:counter|dff_reset:\ng:2:dfff
+D => Q~reg0.DATAIN
+clk => Q~reg0.CLK
+reset => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|Sequence_Generator_Structural:add_instance|logic_unit:lu
+I[0] => Y[1].DATAIN
+I[1] => Y[2].DATAIN
+I[2] => Y[3].DATAIN
+Y[0] <= <VCC>
+Y[1] <= I[0].DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= I[1].DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= I[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,84 @@
+# Reading pref.tcl
+# do DUT_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/Flipflops.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:50:11 on Oct 02,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/Flipflops.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Flipflops
+# -- Compiling entity dff_set
+# -- Compiling architecture struct of dff_set
+# -- Compiling entity dff_reset
+# -- Compiling architecture struct of dff_reset
+# End time: 22:50:12 on Oct 02,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:50:12 on Oct 02,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 22:50:12 on Oct 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/Sequence_generator_struct.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:50:12 on Oct 02,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/Sequence_generator_struct.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Flipflops
+# -- Compiling entity Sequence_generator_struct
+# -- Compiling architecture structa of Sequence_generator_struct
+# End time: 22:50:12 on Oct 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:50:12 on Oct 02,2021
+# vcom -reportprogress 300 -93 -work work D:/Acads/Sem3/EE214-Digital-Circuits-Lab/Projects/HW-3/Sequence-Generator-Struct/testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 22:50:12 on Oct 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" testbench 
+# Start time: 22:50:12 on Oct 02,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading work.flipflops
+# Loading work.sequence_generator_struct(structa)
+# Loading work.dff_reset(struct)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: SUCCESS, all tests passed.
+#    Time: 1900 ns  Iteration: 0  Instance: /testbench
+# End time: 22:50:49 on Oct 02,2021, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 0
