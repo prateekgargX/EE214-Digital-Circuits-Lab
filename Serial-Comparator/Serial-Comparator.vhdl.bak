@@ -1,0 +1,110 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Serial_comparator is
+port (reset, a,b: in std_logic; clock: in std_logic; g, l: out std_logic);
+end entity;
+
+architecture BHV of Serial_comparator is
+	type state is (rst,S0,S1,S2); --rst, gt, eq, lt    
+
+	signal y_present,y_next: state:=rst;
+	
+begin
+
+	clock_proc:process(clock,reset)
+	begin
+		if(clock='1' and clock' event) then
+        if(reset='1') then
+            y_present<= rst ;
+				
+        else
+            y_present<= y_next ;
+        end if;
+		end if;
+   end process;
+
+state_transition_proc:process(a,b,y_present)
+begin
+    case y_present is
+        when rst=> --rst
+            if(a=b) then
+                y_next<= S1; 
+            elsif(a<b) then
+				    y_next<= S2; 
+            elsif(a>b) then
+				    y_next<= S0; 
+            end if;
+		  when S0=> --gt
+            if(a<b) then
+                y_next<= S2; 
+            else
+                y_next <= y_present;
+            end if;
+		  when S1=> --eq  
+            if(a>b) then
+                y_next<= S0; 
+            elsif(a<b) then
+				    y_next<= S2; 
+            else
+				    y_next<= y_present; 
+            end if;
+		  when S2=> --lt
+            if(a>b) then
+                y_next<= S0; 
+            else
+				    y_next<= y_present; 
+            end if;
+		  end case;
+		  
+end process;
+output_proc: process(y_present,a,b)
+begin
+       if(reset='1') then 
+				l <= '0';
+				g <= '0'; 
+		 else
+		 case y_present is
+        when rst=> --rst
+            if(a=b) then
+                l <= '0';
+					 g <= '0';  
+            elsif(a<b) then
+				    l <= '0';
+				    g <= '1'; 
+            elsif(a>b) then
+					 l <= '1';
+           		 g <= '0'; 
+            end if;
+		  when S0=> --gt
+            if(a<b) then
+                l <= '0';
+           		 g <= '1'; 
+            else
+                l <= '0';
+           		 g <= '1'; 
+            end if;
+		  when S1=> --eq  
+            if(a>b) then
+                l <= '1';
+           		 g <= '0'; 
+            elsif(a<b) then
+				    l <= '0';
+           		 g <= '1'; 
+            else
+				    l <= '0';
+           		 g <= '0'; 
+            end if;
+		  when S2=> --lt
+            if(a>b) then
+                l <= '1';
+           		 g <= '0'; 
+            else
+				    l <= '1';
+           		 g <= '0'; 
+            end if;
+		  end case;
+		  end if;
+end process;       
+end BHV;
+    

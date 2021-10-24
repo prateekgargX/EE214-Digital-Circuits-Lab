@@ -1,0 +1,56 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity timer is
+	port ( inp:       in std_logic;
+			 clock_1:   in std_logic;
+			 clock_50:  in std_logic;
+			 reset :    in std_logic;
+			 timer_inp: in std_logic_vector(1 downto 0);
+			 LED :     out std_logic_vector(3 downto 0)
+			 );
+			-- timer_inp is State Machine output
+end entity timer;
+
+architecture rch of timer is
+
+component timer_controller is
+port(
+		  inp:        in std_logic_vector(2 downto 0);
+        reset:      in std_logic;
+		  clock:      in std_logic;
+        outp:      out std_logic_vector(1 downto 0));
+end component;
+
+begin
+
+	FSM: timer_controller port map(
+		  inp => inp,
+        reset=> reset,
+		  clock=> clock_50,
+        outp=> timer_inp,
+		  );
+		  
+	process(clock_50)
+		variable timer1 : integer range 0 to 500E6 := 1;
+		variable timer2 : integer range 0 to 1000E6 := 1;
+		variable timer3 : integer range 0 to 1500E6 := 1;
+		-- 500E6 means 500 x 10 ^ 6
+		-- the above variable will count the number
+		-- of clock pulses till it reaches required
+		-- number of seconds
+		-- Use similar 2 other variables for timer2, timer3
+	begin
+		if................... -- Fill your code here
+		-- You may have to use multiple nested if condition here
+		-- e.g. clock_50'event, reset, condition for increment etc.
+		-- reset will initialize the timer1, timer2 and timer3 with
+		-- the value 1
+			timer1 := timer1 + 1;
+		-- this is the syntax to increment timer variable
+		-- remember : you have to assign LED here also
+		end if;
+	end process;
+
+end rch;

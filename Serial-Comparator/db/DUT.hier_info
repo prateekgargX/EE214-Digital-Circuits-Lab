@@ -1,0 +1,33 @@
+|DUT
+input_vector[0] => Serial_comparator:add_instance.clock
+input_vector[1] => Serial_comparator:add_instance.b
+input_vector[2] => Serial_comparator:add_instance.a
+input_vector[3] => Serial_comparator:add_instance.reset
+output_vector[0] << Serial_comparator:add_instance.l
+output_vector[1] << Serial_comparator:add_instance.g
+
+
+|DUT|Serial_comparator:add_instance
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_next.lt_191.ACLR
+reset => y_next.eq_217.ACLR
+reset => y_next.gt_243.ACLR
+reset => y_next.rst_269.PRESET
+reset => g$latch.ACLR
+reset => l$latch.ACLR
+a => state_transition_proc.IN0
+a => state_transition_proc.IN0
+a => state_transition_proc.IN0
+a => state_transition_proc.IN0
+b => state_transition_proc.IN1
+b => state_transition_proc.IN1
+b => state_transition_proc.IN1
+b => state_transition_proc.IN1
+clock => y_present~1.DATAIN
+g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+l <= l$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

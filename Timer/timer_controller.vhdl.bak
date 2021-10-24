@@ -1,0 +1,59 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity timer_controller is
+port(
+		  inp:        in std_logic_vector(2 downto 0);
+        reset:      in std_logic;
+		  clock:      in std_logic;
+        outp:      out std_logic_vector(1 downto 0));
+end timer_controller ;
+
+architecture rch of timer_controller is
+---------------state types----------------------------------------
+type state is (rst,t1,t2,t3);    
+---------------signals of state type------------------------------
+signal y_present,y_next: state:=rst;
+
+begin
+clock_proc:process(clock,reset)
+begin
+    if(clock='1' and clock' event) then
+        if(reset='1') then
+            y_present<= rst ; 
+        else
+            y_present<= y_next ;
+        end if;
+    end if;
+    
+end process;
+
+state_transition_proc:process(inp)
+begin
+    case unsigned(inp) is
+        when 1=>
+            y_next<= t1; --timer1
+		  when 2=>
+            y_next<= t1; --timer2
+		  when 4=>
+            y_next<= t1; --timer3
+		  when others=>
+				y_next<= y_present; --same state	
+		  end case;
+end process;
+output_proc: process(y_present)
+begin
+        case y_present is
+        
+		  when rst=>
+					outp <= "00";
+		  when t1=>
+					outp <= "01";
+		  when t2=>
+					outp <= "10";
+		  when t3=>
+               outp <= "11";				
+		  end case;
+end process;
+end rch;
